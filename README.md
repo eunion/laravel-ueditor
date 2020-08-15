@@ -5,7 +5,7 @@ UEditor integration for Laravel 5. 路由缓存问题
 ## 安装
 
 ```shell
-$ composer require "Eunion/laravel-ueditor:~2.0"
+$ composer require "eunion/laravel-ueditor:~2.0"
 ```
 
 ## 配置
