@@ -64,8 +64,8 @@ class UEditorServiceProvider extends ServiceProvider
      */
     protected function registerRoute($router)
     {
-        $router->group(array_merge(['namespace' => __NAMESPACE__], config('ueditor.route.options', [])), function ($router) {
+        /*$router->group(array_merge(['namespace' => __NAMESPACE__], config('ueditor.route.options', [])), function ($router) {
             $router->any(config('ueditor.route.name', '/ueditor/server'), 'UEditorController@serve');
-        });
+        });*/
     }
 }
