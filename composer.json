@@ -1,11 +1,11 @@
 {
-    "name": "codingyu/laravel-ueditor",
+    "name": "eunion/laravel-ueditor",
     "description": "UEditor integration for Laravel.",
     "license": "MIT",
     "authors": [
         {
-            "name": "codingyu",
-            "email": "everceyu@gmail.com"
+            "name": "eunion",
+            "email": "petertulooce@gmail.com"
         }
     ],
     "require": {
@@ -13,7 +13,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Codingyu\\LaravelUEditor\\": "src/"
+            "Eunion\\LaravelUEditor\\": "src/"
         }
     },
     "suggest": {
@@ -25,7 +25,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Codingyu\\LaravelUEditor\\UEditorServiceProvider"
+                "Eunion\\LaravelUEditor\\UEditorServiceProvider"
             ]
         }
     }

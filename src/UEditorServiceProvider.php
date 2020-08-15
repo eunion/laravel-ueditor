@@ -9,7 +9,7 @@
  * with this source code in the file LICENSE.
  */
 
-namespace Codingyu\LaravelUEditor;
+namespace Eunion\LaravelUEditor;
 
 use Illuminate\Routing\Router;
 use Illuminate\Support\Facades\Storage;
@@ -64,10 +64,13 @@ class UEditorServiceProvider extends ServiceProvider
      */
     protected function registerRoute($router)
     {
-        if (!$this->app->routesAreCached()) {
+        /*if (!$this->app->routesAreCached()) {
             $router->group(array_merge(['namespace' => __NAMESPACE__], config('ueditor.route.options', [])), function ($router) {
                 $router->any(config('ueditor.route.name', '/ueditor/server'), 'UEditorController@serve');
             });
-        }
+        }*/
+        $router->group(array_merge(['namespace' => __NAMESPACE__], config('ueditor.route.options', [])), function ($router) {
+            $router->any(config('ueditor.route.name', '/ueditor/server'), 'UEditorController@serve');
+        });
     }
 }

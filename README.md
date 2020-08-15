@@ -1,11 +1,11 @@
 # Laravel-UEditor
 
-UEditor integration for Laravel 5.
+UEditor integration for Laravel 5. 路由缓存问题
 
 ## 安装
 
 ```shell
-$ composer require "codingyu/laravel-ueditor:~2.0"
+$ composer require "Eunion/laravel-ueditor:~2.0"
 ```
 
 ## 配置
@@ -13,7 +13,7 @@ $ composer require "codingyu/laravel-ueditor:~2.0"
 1. 发布配置文件与资源
 
     ```php
-    $ php artisan vendor:publish --provider='Codingyu\LaravelUEditor\UEditorServiceProvider'
+    $ php artisan vendor:publish --provider='Eunion\LaravelUEditor\UEditorServiceProvider'
     ```
 
 2. 模板引入编辑器
@@ -71,7 +71,7 @@ $ composer require "codingyu/laravel-ueditor:~2.0"
 
 ### 上传中事件
 
-> Codingyu\LaravelUEditor\Events\Uploading
+> Eunion\LaravelUEditor\Events\Uploading
 
 在保存文件之前，你可以拿到一些信息：
 
@@ -83,7 +83,7 @@ $ composer require "codingyu/laravel-ueditor:~2.0"
 
 ### 上传完成事件
 
-> Codingyu\LaravelUEditor\Events\Uploaded
+> Eunion\LaravelUEditor\Events\Uploaded
 
 它有两个属性：
 
